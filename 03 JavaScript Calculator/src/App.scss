@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+}
+
+#calculator {
+  width: 20.4rem;
+  height: 24.4rem;
+  margin: auto;
+  padding: 0.2rem;
+  display: grid;
+  grid-template-columns: 12rem 8rem;
+  grid-template-rows: 8rem 18rem;
+}
+
+#display-container {
+  margin-bottom: 0.2rem;
+  display: grid;
+  grid-template-columns: 20rem;
+  grid-template-rows: 3rem 5rem;
+}
+
+button {
+  margin: 0.1rem;
+}
+
+#one, #four, #seven, #zero {
+  margin-left: 0;
+}
+
+#one, #two, #three, #clear, #erase {
+  margin-top: 0;
+}
+
+#erase, #subtract, #divide, #equals {
+  margin-right: 0;
+}
+
+#zero, #decimal, #equals {
+  margin-bottom: 0;
+}
+
+#numbers, #symbols {
+  display: grid;
+  grid-template-columns: 4rem 4rem 4rem;
+  grid-template-rows: 4rem 4rem 4rem 4rem;
+}
+
+#symbols {
+  grid-template-columns: 4rem 4rem;
+}
+
+#display-container, #zero, #equals {
+  grid-column: 1 / span 2;
+}
+
+#display-text-secondary {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 2rem;
+  line-height: 3rem;
+  text-align: left;
+  margin-left: 1rem;
+}
+
+#display {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 3rem;
+  line-height: 5rem;
+  text-align: right;
+  margin-right: 1rem;
+}

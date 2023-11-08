@@ -1,0 +1,53 @@
+html {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* This grid contains all elements in the calculator as childs */
+#calculator {
+  display: grid;
+  grid-template-columns: 3.75rem 3.75rem 3.75rem 3.75rem 3.75rem;
+  grid-template-rows: 3.75rem 3.75rem 3.75rem 3.75rem 3.75rem 3.75rem;
+}
+
+#display {
+  width: 100%;
+  height: 100%;
+  grid-column: 1 / span 5;
+  grid-row: 1 / span 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#main-text {
+  width: 100%;
+  height: 50%;
+  font-size: 2rem;
+  text-align: right;
+  padding-right: 1.1rem;
+}
+
+#secondary-text {
+  width: 100%;
+  height: 50%;
+  font-size: 1rem;
+  text-align: left;
+  padding-left: 0.75rem;
+  padding-top: 0.5rem;
+}
+
+.btn {
+  font-size: 1.5rem;
+}
+
+#zero {
+  grid-column: 1 / span 2;
+}
+
+#equals {
+  grid-column: 4 / span 2;
+}
